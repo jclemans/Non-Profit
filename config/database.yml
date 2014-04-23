@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: donations_development
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: donations_test
