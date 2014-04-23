@@ -1,0 +1,15 @@
+
+<div class="col-sm-5">
+  <%= form_for @non_profit do |f| %>
+    <%= render 'layouts/errors', object: @non_profit %>
+    <div class="form-group">
+      <%= f.label :name %><br>
+      <%= f.text_field :name, class: "form-control", placeholder: "name..." %>
+    </div>
+    <div class="form-group">
+      <%= f.label :description %><br>
+      <%= f.text_area :description, class: "form-control", placeholder: "a brief description..." %>
+    </div>
+  <%= f.submit "Save Organization", :class => 'btn btn-success' %>
+  <% end %>
+</div>

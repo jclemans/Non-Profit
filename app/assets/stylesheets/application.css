@@ -11,3 +11,16 @@
  *= require_self
  *= require_tree .
  */
+
+.clean {
+  list-style: none;
+}
+
+/*.main-title {
+  color: #4582ec;
+  text-shadow: 1px 2px 5px black;
+}*/
+
+.blue-nav {
+  background-color: #C2E8BB !important;
+}
