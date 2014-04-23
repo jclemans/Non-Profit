@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Donations</title>
+  <title><%= content_for?(:title) ? yield(:title) : "Donatster " %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
   <%= csrf_meta_tags %>
+
 </head>
 <body>
+  <div class= "container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><h1><a class="navbar-brand" href="/non_profits">Donatster&#8482</a></h1></li>
+        </ul>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav navbar-right">
 
-<%= yield %>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+  <% if flash[:notice] -%>
+    <h3 class="alert alert-info"><%= flash[:notice] %></h3>
+  <% end %>
+  <%= yield %>
+  </div>
 </body>
 </html>

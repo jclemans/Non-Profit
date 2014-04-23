@@ -1,0 +1,7 @@
+<h2>Donate to one of these progressive Non-Profit organizations today!</h2>
+
+<ul>
+  <% @non_profits.each do |non_profit| %>
+    <li><%= link_to "#{non_profit.name}", non_profit_path(non_profit.id) %> </li>
+  <% end %>
+</ul>
