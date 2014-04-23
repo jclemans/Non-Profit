@@ -8,14 +8,13 @@ The goal of this project is to build a site where users can choose non-profits t
 Features
 --------
 ####Complete:
-* None yet
-
-####To Do:
 * Create CRUD/L functionality for non-profits. No user auth or images yet.
 
 * Let users choose a non-profit to donate to. To do this, use the Stripe API.
 
-* Now, non-profits want the option to have their donors opt for monthly donations. Use Stripe subscriptions to bill their card for $15 per month if they choose monthly donations.
+####To Do:
+
+* Non-profits want the option to have their donors opt for monthly donations. Use Stripe subscriptions to bill their card for $15 per month if they choose monthly donations.
 
 * Not everyone wants to donate $15/month. Let non-profits create different donation tiers by adding subscriptions. Hint: A non-profit has many subscriptions.
 
