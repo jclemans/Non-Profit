@@ -222,6 +222,7 @@ DEPENDENCIES
   shoulda-matchers
   stripe!
   textacular
+  turbolinks
   uglifier
   vcr
   webmock

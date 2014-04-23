@@ -19,7 +19,7 @@ class NonProfitsController < ApplicationController
 
   def show
     @non_profit = NonProfit.find(params[:id])
-    @donation = Donation.new
+    @charge = Charge.new
   end
 
   def edit

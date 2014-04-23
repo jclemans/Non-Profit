@@ -1,6 +1,6 @@
 <div class="col-sm-5">
-  <%= form_for @donation do |f| %>
-    <%= render 'layouts/errors', object: @donation %>
+  <%= form_for @charge do |f| %>
+    <%= render 'layouts/errors', object: @charge %>
     <div class="form-group">
       <%= f.hidden_field :non_profit_id, value: @non_profit.id %>
       <%= f.label :amount %>

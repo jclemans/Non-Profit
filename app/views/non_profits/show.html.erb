@@ -1,3 +1,13 @@
 <h1><%= "#{@non_profit.name}" %></h1>
 <p><%= simple_format "#{@non_profit.description}" %></p>
-<%= render 'donations/form' %>
+<%= form_tag charges_path do %>
+  <article>
+    <label class="amount">Amount:<br>
+      <%= text_field :amount, :class => "form-group" %>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A Generous Donation"></script>
+<% end %>
