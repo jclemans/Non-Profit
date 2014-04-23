@@ -1,0 +1,14 @@
+<div class="col-sm-5">
+  <%= form_for @donation do |f| %>
+    <%= render 'layouts/errors', object: @donation %>
+    <div class="form-group">
+      <%= f.hidden_field :non_profit_id, value: @non_profit.id %>
+      <%= f.label :amount %>
+      <%= f.text_field :amount %>
+
+      <%#= f.label :credit_card %>
+      <%#= f.label :expiration %>
+
+    </div>
+    <% end %>
+</div>

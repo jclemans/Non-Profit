@@ -19,6 +19,7 @@ class NonProfitsController < ApplicationController
 
   def show
     @non_profit = NonProfit.find(params[:id])
+    @donation = Donation.new
   end
 
   def edit

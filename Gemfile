@@ -12,6 +12,7 @@ gem 'bcrypt'
 gem 'devise'
 gem 'textacular'
 gem 'rest-client'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :development do
   gem 'better_errors'
